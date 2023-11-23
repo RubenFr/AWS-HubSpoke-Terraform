@@ -1,0 +1,5 @@
+* remove default vpc
+* remove default subnets
+* provide a role or any other permission architecture to run the code with terraform
+* In Transit gateway route tables - configure the "TGW-Spokes-Route-Table" as the Default Association route table ID. (can be configured in console)
+* RAM - Need to configure share of the Transit gateway to all the Organization

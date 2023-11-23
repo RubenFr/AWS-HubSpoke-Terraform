@@ -1,0 +1,3 @@
+* remove default vpc
+* remove default subnets
+* provide a role or any other permission architecture to run the code
