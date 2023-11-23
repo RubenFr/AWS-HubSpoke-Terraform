@@ -1,9 +1,8 @@
 locals {
   cidr_vpc = {
     spokes = {
-      "${local.account_ids.hub}"    = "10.10.0.0/22"
-      "${local.account_ids.spoke1}" = "10.10.4.0/22"
-      "${local.account_ids.spoke2}" = "10.10.8.0/22"
+      "${local.account_ids.spoke1}" = "10.10.0.0/22"
+      "${local.account_ids.spoke2}" = "10.10.4.0/22"
     }
     hub = {
       egress_vpc     = "10.1.0.0/16"
@@ -39,6 +38,6 @@ locals {
   client_vpn = {
     create_client_vpn = false
     clientvpn_idp     = "client-vpn-idp"
-    clientvpn_domain  = "clientvpn-nimbus-dev-prod.dev.idf.il"
+    clientvpn_domain  = "clientvpn.local"
   }
 }
