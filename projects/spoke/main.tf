@@ -6,7 +6,7 @@ provider "aws" {
   default_tags {
     tags = {
       Application = "Spoke"
-      Created_By  = "Terraform-MCS"
+      Created_By  = "Terraform"
     }
   }
 }
